@@ -9,6 +9,10 @@ const setQuery = (e) => {
 const getResult = (cityName) => {
     let query = `${url}weather?q=${cityName}&appid=${key}&units=metric&lang=tr`
     console.log(query)
+        .then(weather => {
+            return weather.json()
+        })
+        .then(displayResult)
 }
 
 const searchBar = document.getElementById('searcBar')
