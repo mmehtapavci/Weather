@@ -28,23 +28,10 @@ const displayResult = (result) => {
     let minmax = document.querySelector('.minmax');
     minmax.innerText = `${Math.round(result.main.temp_min)}°C - ${Math.round(result.main.temp_max)}°C`;
 
-    // Arka plan resmini güncelle
-    updateBackground();
+
 };
 
 const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keypress', setQuery);
 
-// Arka plan resmini güncellemek için kullanılacak kodlar
-const backgroundImages = ['background1.jpg', 'background2.jpg', 'background3.jpg'];
-let currentIndex = 0;
 
-function updateBackground() {
-    document.body.style.backgroundImage = `url(${backgroundImages[currentIndex]})`;
-    currentIndex = (currentIndex + 1) % backgroundImages.length;
-}
-
-// Sayfa yüklendiğinde ilk hava durumu bilgisini çekin
-window.addEventListener('load', () => {
-    getResult('YOUR_DEFAULT_CITY_NAME'); // Varsayılan şehir adını buraya ekleyin
-});

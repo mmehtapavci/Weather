@@ -3,15 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'montserrat', sans-serif;
+body {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
-    background-image: url(/city.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    animation: changeBackground 140s linear infinite;
 }
+
+@keyframes changeBackground {
+    0%, 100% {
+        background-image: url('/img/city.jpg');
+    }
+    5% {
+        background-image: url('/img/city2.jpg');
+    }
+    10% {
+        background-image: url('/img/city3.jpg');
+    }
+    15% {
+        background-image: url('/img/city4.jpg');
+    }
+    20% {
+        background-image: url('/img/city5.jpg');
+    }
+    25% {
+        background-image: url('/img/city6.jpg');
+    }
+    30% {
+        background-image: url('/img/city7.jpg');
+    }
+    35% {
+        background-image: url('/img/city8.jpg');
+    }
+    40% {
+        background-image: url('/img/city9.jpg');
+    }
+    45% {
+        background-image: url('/img/city10.jpg');
+    }
+    50% {
+        background-image: url('/img/city10.jpg');
+    }
+    55% {
+        background-image: url('/img/city9.jpg');
+    }
+    60% {
+        background-image: url('/img/city8.jpg');
+    }
+    65% {
+        background-image: url('/img/city7.jpg');
+    }
+    70% {
+        background-image: url('/img/city6.jpg');
+    }
+    75% {
+        background-image: url('/img/city5.jpg');
+    }
+    80% {
+        background-image: url('/img/city4.jpg');
+    }
+    85% {
+        background-image: url('/img/city3.jpg');
+    }
+    90% {
+        background-image: url('/img/city2.jpg');
+    }
+    95% {
+        background-image: url('/img/city.jpg');
+    }
+}
+
+
+
+
+
 .app{
     display: flex;
     flex-direction: column;
