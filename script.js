@@ -27,8 +27,6 @@ const displayResult = (result) => {
 
     let minmax = document.querySelector('.minmax');
     minmax.innerText = `${Math.round(result.main.temp_min)}°C - ${Math.round(result.main.temp_max)}°C`;
-
-
 };
 
 const searchBar = document.getElementById('searchBar');
